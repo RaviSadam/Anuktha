@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IKIGAI CITY - Anuktha Avenues</title>
+    <link rel="stylesheet" href="./registration.css">
+</head>
+
+<body onload="handleClientLoad()">
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo"><img src="./images/untitled_design.png" width="100" height="80"></div>
+        <nav class="navbar">
+            <a href="/channelPatner.html">Channel Partner</a>
+            <a href="#contact">Contact Us</a>
+        </nav>
+    </header>
+    <img src="./images/Screenshot 2024-09-07 102234.png" width="100%" height="100%" style="margin-top: -5px;">
+    <div class="form-container">
+        <form action="#" method="post">
+            <div class="form-group">
+                <div class="field">
+                    <label for="Name">Name:</label>
+                    <input type="text" id="Name" name="name" required>
+                </div>
+                <div class="field">
+                    <label for="Email">Email ID:</label>
+                    <input type="email" id="Email" name="email" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="field">
+                    <label for="mobile">Mobile Number:</label>
+                    <input type="tel" id="mobile" name="mobile" required>
+                </div>
+                <div class="field">
+                    <label for="projects">No. Of Projects in Hand:</label>
+                    <input type="text" id="projects" name="projects" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="field">
+                    <label for="cname">Company Name:</label>
+                    <input type="text" id="cname" name="cname" required>
+                </div>
+                <div class="field">
+                    <label for="sales">No. of sales in a Month:</label>
+                    <input type="text" id="sales" name="sales" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="field">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div class="field">
+                    <label for="rera">RERA No:</label>
+                    <input type="text" id="rera" name="rera" required>
+                </div>
+            </div>
+            <button onclick="handleFormSubmit()">Submit</button>
+        </form>
+    </div>
+    <img id="contact" src="./images/Screenshot 2024-09-07 101753.png" width="100%" height="100%" style="margin-top: -5px;">
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script>
+        var CLIENT_ID = '107316109881791086438';
+        var API_KEY = 'MIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDL+QJtsNQcS4hC\nA2L4xeK63lmNEHsAmfFvCU2yFkVgy7cGLMW3ku65o2dZA5Z0lco0EclxmeL2FcRs\n9EhlVJJfJ8Krw/jBbQ7t6fmfAO8y4TtvYiNh/evVv0KXY9aKamkg+2VWO8BoZ9ei\nlmyvauSHTOxlXY1zXvYxqyQEaYmqXHJ6JdSY3+UYT0fejojU2LHKwv9j6YAgVmgG\nERJYW7TIPrT9FW5Tj8e71BeYUv9LJ6ecSyVnKLlqjdAKQwC9yZ9nzoDuyJPPjCMW\nPHxH+idfz5vKLmvBS0ih82680zX+kqpQbaoRxlO4KX7L/OwGr/nalv7gIIVLnR3A\nwzmnal3jAgMBAAECggEAFRitz0nma6rFmWD09UVaUaOPtY8KecxySTQNd37lhsEV\n2VX7eSTW+2z9fRppjv4IdOGQvpGBBPIevSTNnBVm3N/65X3BFm3A3otASIQgjq2h\np7/fEv01TYfuS5mFkLlizYjS5Aa4EX8JXC/yESPy0P+mxPEry86lk2DfunPD9lJR\nU+zqjjETjA3dJwijbaNJxLdLOLAKE7b77JDFAVCjUImO7q+s3bRCE9SF8AQjeqqD\nw2/W9sTSg1UGK45nHy5JCNap9xy8VvtAf3FjCrgccPbbckzccdhXdrPQpYhadUC2\n91532KJKGCD5DsSglgOvl94GQWrpp0SqSXEPr6Qj+QKBgQD7j/1cNEKiLUQoRmcG\npye1OQkAcE0vkn4QFQ1XmpJUeIMPlV0X4eqaSR6B7/0sHaPpW8SPF7N0GJO3jWKo\nJQd9WS3HU5ANiLGq9LY39BLGlP6BCsPgIGfnkN9OBvXCihdZW+IKS6S3Sr/iCQ5Y\nigdHFaSM+PPNJkPgI2+9YJB+hwKBgQDPkhzyFoznx820sPm0UroJEfHLFce+U/h1\nnlQAWybTpX61pgNpNmvXn+gjhEbwPaqtf2xmMmkS6FI9BlP6EWwg6Cd8i37krkak\nZK3kSzlgrRUlVEidYK3Z4gj8XXOaF+ULSKmD4ppQNacabGGG1ff2M3TQN3lyiKO/\nVDU3Yz8AxQKBgAV/J/IT0kDo7ExU/XtPu7ZiAKhZy9X2RXrket4nKnteBr8YbGhR\nL2cfoeME82s7WpGGx8y4n9sxjki8diNma7t5b16jnMou6nLp1fFzC9X6+3SmX5FO\nI/cTW03BKS2PBuOU9mNzM64tm/O8buvQWEhdWLMb3XfmFiWXoKFqsr2RAoGBAKJI\nVAUZiFR2K+eHLdLDktsggnAKuT2enPQoMviMS1DRZL1T6/rIJ4xPYsjR1DxjmhtH\nMlK8OtYjeJhpaCJsmKMpniWLUkwrzOMeK63++f8RkyS6PoN8YK+mPuw/i+//mn01\n9AI+mfL334uTDLTEeLauCDf6ByN6nLsrdOe22j0ZAoGAXxbg5MFon6ZvFERtPD7u\n68NGZhfRUW1TdWs7VRVY6GMqm4EnJsO6lCicL34C3HFL3CrKsZbwicgn0wTSR6XF\nGR7ceOsPlVxwvyg2I5FU0PHYRHOh60uo97VaNwZdZNgO0xGh8Gygt6kXS1SdpQ7T\nmDouxUr06SgQvT4atYaZtj4=\n-----END PRIVATE KEY-----\n';
+
+        var DISCOVERY_DOCS = ["https://sheets.googleapis.com/$discovery/rest?version=v4"];
+        var SCOPES = 'https://www.googleapis.com/auth/spreadsheets';
+
+        function handleClientLoad() {
+            gapi.load('client:auth2', initClient);
+        }
+
+        function initClient() {
+            gapi.client.init({
+                apiKey: API_KEY,
+                clientId: CLIENT_ID,
+                discoveryDocs: DISCOVERY_DOCS,
+                scope: SCOPES
+            }).then(function () {
+                gapi.auth2.getAuthInstance().isSignedIn.listen(updateSigninStatus);
+                updateSigninStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
+            });
+        }
+
+        function updateSigninStatus(isSignedIn) {
+            if (isSignedIn) {
+                document.getElementById('submit_button').addEventListener('click', handleFormSubmit);
+            } else {
+                // Handle sign-in
+            }
+        }
+
+        function handleFormSubmit(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            var form = document.querySelector('form');
+            var formData = new FormData(form);
+
+            var values = [
+                [
+                    formData.get('name'),
+                    formData.get('email'),
+                    formData.get('mobile'),
+                    formData.get('projects'),
+                    formData.get('cname'),
+                    formData.get('sales'),
+                    formData.get('address'),
+                    formData.get('rera')
+                ]
+            ];
+
+            var params = {
+                spreadsheetId: '1zc6CndToM8KRtXMLqjcDvTNZqBe-CeZUGyddfZD8L2I',
+                valueInputOption: 'USER_ENTERED',
+                insertDataOption: 'INSERT_ROWS'
+            };
+
+            var valueRangeBody = {
+                "values": values
+            };
+
+            gapi.client.sheets.spreadsheets.values.append(params, valueRangeBody).then((response) => {
+                window.location.href=""
+                console.log(response);
+                // Optionally show a success message to the user
+            }, (error) => {
+                console.error('Error writing to sheet:', error);
+            });
+        }
+
+    </script>
+</body>
+
+</html>
